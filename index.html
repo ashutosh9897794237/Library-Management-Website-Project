@@ -5,39 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>table, th, td {
-  border: 1px solid black;
-}</style>
+    <style>table,th,td{
+        border: 1px solid black;
+        padding: 5px;
+        color: white;
+        background-color: black;
+    }</style>
 </head>
 <body>
     <div class="container">
-    <h1>Library Management System</h1>
+    <div class="new">
+     <h1>Library Management System</h1>
+    </div><br>
+    <form onsubmit="Employee()" class="form" id="form">
+       <div> Book Name 
+       <input type="text" id="name">
+    </div>
+     <!--<div> Enter Profession <br><br>
+       <input type="text" placeholder="Example" id="profession">-->
+    </div> <br>
 
-    <form>
-        Book Name   <input type="text" id="name"> <br><br>
-        Issued To   <input type="text" id="issue">
-    </form> <br> <br>
-    <button id="add" type="submit">Issue Book</button> <br><br><br>
+
+    <p id="demo"></p>
+
+     <div> Issue To 
+       <input type="text"  id="issue">
+    </div>
+    </form>
+    <br><br>
+    <button type="submit" id="Add">Add User</button> <br><br>
     <table>
-        <colgroup><col span="5">
-        </colgroup>
         <thead>
-            <tr>
-                <th>
-                    <td>Id</td>
-                    <td>Book Name</td>
-                    <td>Issue To</td>
-                    <td>Issue Date and Time</td>
-                    <td>Status</td>
-                </th>
+            <tr class="row">
+                <!--<th>Id</th>-->
+                <th>name</th>
+                <th>Issued To</th>
+                <th>Issued date and time</th>
+                <th>status</th>
             </tr>
-            <tr></tr>
-            <tr></tr>
         </thead>
+        <tbody></tbody>
     </table>
     </div>
-
- <script src="script.js"></script>
-
+     <script src="script.js"></script>
 </body>
 </html>
