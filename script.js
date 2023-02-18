@@ -13,6 +13,8 @@ var d = new Date();
 
  //var id = new EventCounts();
 
+
+
 btnAdd.addEventListener('click', () => {
     //let id = IdInput.value;
     let name = nameInput.value;
@@ -24,7 +26,7 @@ btnAdd.addEventListener('click', () => {
                     <td>${name}</td>
                     <td>${issue}</td>
                     <td>${d}</td>
-                    <td><button class="deleteBtn">return</button> <button class="deleteBtn">Not return</button></td>
+                    <td><button class="deleteBtn">return</button>/<button class="deleteBtn">Not return</button></td>
                 </tr>`;
     table.innerHTML += template;
 });

@@ -1,10 +1,27 @@
+*{
+    background-color: black;
+    color: white;
+}
+
 table,th,td{
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 5px;
     color: white;
     background-color: black;
+    
 }
 .container{
-    background-color: black;
-    color: white;
+    
+    margin-left: 50px;
+}
+.but{
+    margin-left: 50px;
+    width: 100px;
+    height: 20px;
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: white;
+    border-color: white;
+border-radius:  5px solid white;
 }
